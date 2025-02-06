@@ -4583,7 +4583,7 @@
 					)
 				)
 			)
-			(property "Footprint" "SparkFun-Connector:JST_SMD_1.0mm-4_RA"
+			(property "Footprint" "SparkFun-Connector:JST_SMD_1.0mm-4_Black"
 				(at 0 -12.7 0)
 				(effects
 					(font
@@ -10222,6 +10222,149 @@
 				)
 			)
 		)
+		(symbol "SparkFun-Resistor:330_0603"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "330"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "SparkFun-Resistor:R_0603_1608Metric"
+				(at 0 -4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PROD_ID" "RES-00818"
+				(at 0 -6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "SparkFun R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "330_0603_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -1.143 1.016) (xy -0.762 0) (xy -0.381 -1.016) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0.381 1.016) (xy 0.762 0) (xy 1.143 -1.016) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "330_0603_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "SparkFun-Resistor:4.7k_0603"
 			(pin_numbers hide)
 			(pin_names
@@ -10516,6 +10659,12 @@
 		(uuid "04f542e6-7af9-4bd2-9295-ccfa380eae7e")
 	)
 	(junction
+		(at 156.21 227.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27129f7c-3a34-46b3-80f8-2b40bbad4649")
+	)
+	(junction
 		(at 167.64 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10634,6 +10783,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0421ea2-2e20-4c86-84e5-9eda5ee4a9b9")
+	)
+	(junction
+		(at 152.4 224.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5e59ab4-3948-4f82-84c2-aa65de21f721")
 	)
 	(no_connect
 		(at 101.6 52.07)
@@ -10780,6 +10935,16 @@
 			(type default)
 		)
 		(uuid "04e5a541-afd2-4814-8b62-65853b3bbb63")
+	)
+	(wire
+		(pts
+			(xy 156.21 227.33) (xy 161.29 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "067d45d5-4872-4bf1-9bb9-73c62a45934c")
 	)
 	(wire
 		(pts
@@ -11153,13 +11318,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 227.33) (xy 153.67 227.33)
+			(xy 152.4 224.79) (xy 161.29 224.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b27c913-45d3-4816-aa43-bc245bc40f22")
+		(uuid "2cb9f023-4798-4395-94f7-9b6b716de020")
 	)
 	(wire
 		(pts
@@ -11443,7 +11608,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 227.33) (xy 161.29 227.33)
+			(xy 153.67 227.33) (xy 156.21 227.33)
 		)
 		(stroke
 			(width 0)
@@ -11723,7 +11888,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 224.79) (xy 161.29 224.79)
+			(xy 147.32 224.79) (xy 152.4 224.79)
 		)
 		(stroke
 			(width 0)
@@ -12103,6 +12268,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 227.33) (xy 148.59 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98584a3a-ab4b-4afe-8388-c350aa23adff")
+	)
+	(wire
+		(pts
 			(xy 341.63 66.04) (xy 340.36 66.04)
 		)
 		(stroke
@@ -12130,6 +12305,16 @@
 			(type default)
 		)
 		(uuid "99d1cc97-c5d2-4e76-b02f-9ab037adeb16")
+	)
+	(wire
+		(pts
+			(xy 156.21 227.33) (xy 156.21 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d8a4bd-2fb0-43db-ad55-8fcd7c4a004b")
 	)
 	(wire
 		(pts
@@ -12390,6 +12575,16 @@
 			(type default)
 		)
 		(uuid "bad881ed-3370-4370-bf36-8741daa09e20")
+	)
+	(wire
+		(pts
+			(xy 152.4 223.52) (xy 152.4 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbaa49f5-13b7-467a-81bf-0f09ff8fcf6b")
 	)
 	(wire
 		(pts
@@ -12962,7 +13157,7 @@
 		)
 		(uuid "5ec4e847-91cb-44ba-90d6-d533e7909bb6")
 	)
-	(text "Coplanar Waveguide Calculation:\nCopper Thickness (1oz): 1.4mil/0.035mm\nBoard thickness: 1.6mm\nDielectric thickness (layer 1 to 2): 0.2mm\nEr: 4.6\nPolygon Isolation: 8mil/0.2032mm\nRF Trace Width: 13.74mil/0.349mm\nhttps://chemandy.com/calculators/coplanar-waveguide-with-ground-calculator.htm"
+	(text "Coplanar 50Ω Waveguide Calculation:\nCopper Thickness (1oz): 1.4mil/0.035mm\nBoard thickness: 1.6mm\nDielectric thickness (layer 1 to 2): 0.2mm\nEr: 4.6\nPolygon Isolation: 8mil/0.2032mm\nRF Trace Width: 13.74mil/0.349mm\nhttps://chemandy.com/calculators/coplanar-waveguide-with-ground-calculator.htm"
 		(exclude_from_sim no)
 		(at 328.93 196.85 0)
 		(effects
@@ -13668,7 +13863,7 @@
 	)
 	(global_label "RXD3"
 		(shape input)
-		(at 152.4 227.33 180)
+		(at 147.32 227.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13678,7 +13873,7 @@
 		)
 		(uuid "90d4300b-4191-469c-83a6-abb2b0815620")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.4558 227.33 0)
+			(at 139.3758 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14284,7 +14479,7 @@
 	)
 	(global_label "TXD3"
 		(shape input)
-		(at 160.02 224.79 180)
+		(at 147.32 224.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14294,7 +14489,7 @@
 		)
 		(uuid "fa94f0a7-d6a0-4f79-868c-f837651ba4da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.3782 224.79 0)
+			(at 139.6782 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14362,6 +14557,73 @@
 			(project "SparkFun_GNSS_LG290P"
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "ST4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun-Connector:TestPoint_1.0mm")
+		(at 152.4 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "024fa945-40ea-4d91-a09a-f4bb6ec08798")
+		(property "Reference" "TP3"
+			(at 152.4 218.44 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.0mm"
+			(at 152.4 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun-Connector:TestPoint-1.0mm"
+			(at 152.4 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 152.4 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5839edd6-28c5-421f-8223-76b6b79e9453")
+		)
+		(instances
+			(project ""
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -14915,7 +15177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "RTK"
+		(property "Value" "~"
 			(at 256.54 222.25 0)
 			(effects
 				(font
@@ -16133,7 +16395,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SparkFun-Resistor:1k_0603")
+		(lib_id "SparkFun-Resistor:330_0603")
 		(at 264.16 228.6 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16151,7 +16413,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "330"
 			(at 266.7 229.8699 90)
 			(effects
 				(font
@@ -16161,7 +16423,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Resistor:R_0603_1608Metric"
-			(at 264.16 224.028 90)
+			(at 268.732 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16170,7 +16432,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 264.16 228.6 0)
+			(at 273.05 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16179,7 +16441,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 264.16 228.6 0)
+			(at 275.59 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16187,8 +16449,8 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "RES-07856"
-			(at 264.16 221.742 90)
+		(property "PROD_ID" "RES-00818"
+			(at 271.018 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17930,7 +18192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VSEL"
+		(property "Value" "~"
 			(at 160.02 215.646 0)
 			(effects
 				(font
@@ -18011,7 +18273,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:JST_SMD_1.0mm-4_RA"
+		(property "Footprint" "SparkFun-Connector:JST_SMD_1.0mm-4_Black"
 			(at 72.39 153.67 0)
 			(effects
 				(font
@@ -18238,7 +18500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PWR"
+		(property "Value" "~"
 			(at 236.22 222.25 0)
 			(effects
 				(font
@@ -18834,16 +19096,15 @@
 	)
 	(symbol
 		(lib_id "SparkFun-Resistor:1k_0603")
-		(at 156.21 227.33 180)
+		(at 151.13 227.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6c5fea8b-09ba-4e55-9e0e-dcd91b6c092e")
 		(property "Reference" "R8"
-			(at 156.21 231.14 0)
+			(at 151.13 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18851,7 +19112,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 156.21 233.68 0)
+			(at 151.13 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18859,7 +19120,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Resistor:R_0603_1608Metric"
-			(at 151.638 227.33 90)
+			(at 146.558 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18868,7 +19129,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 147.32 226.06 90)
+			(at 142.24 226.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18877,7 +19138,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 156.21 227.33 0)
+			(at 151.13 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18886,7 +19147,7 @@
 			)
 		)
 		(property "PROD_ID" "RES-07856"
-			(at 149.352 227.33 90)
+			(at 144.272 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19100,6 +19361,73 @@
 			(project "SparkFun_GNSS_LG290P"
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun-Connector:TestPoint_1.0mm")
+		(at 156.21 228.6 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "730703a2-11c4-4535-8324-969ea068c28f")
+		(property "Reference" "TP2"
+			(at 156.21 233.68 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.0mm"
+			(at 156.21 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun-Connector:TestPoint-1.0mm"
+			(at 156.21 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 156.21 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e4f8824-0efc-4d9e-a2af-9e1b34c00dbb")
+		)
+		(instances
+			(project "SparkFun_GNSS_LG580P"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -19365,7 +19693,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "BT-VCC"
+		(property "Value" "~"
 			(at 123.19 218.44 90)
 			(effects
 				(font
@@ -19670,7 +19998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "HEAD"
+		(property "Value" "~"
 			(at 266.7 222.25 0)
 			(effects
 				(font
@@ -20485,7 +20813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PVT"
+		(property "Value" "~"
 			(at 276.86 222.25 0)
 			(effects
 				(font
@@ -22174,7 +22502,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:JST_SMD_1.0mm-4_RA"
+		(property "Footprint" "SparkFun-Connector:JST_SMD_1.0mm-4_Black"
 			(at 104.14 153.67 0)
 			(effects
 				(font
@@ -23726,7 +24054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PPS"
+		(property "Value" "~"
 			(at 246.38 222.25 0)
 			(effects
 				(font
