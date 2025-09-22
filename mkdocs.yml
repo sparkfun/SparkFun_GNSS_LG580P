@@ -1,0 +1,12 @@
+# Documentation page information
+site_name: SparkFun LG580P GNSS Breakout Hookup Guide
+site_description: A hookup guide for the SparkFun GNSS RTK Breakout - LG580P (Qwiic).
+site_url: https://docs.sparkfun.com/SparkFun_GNSS_LG580P
+site_author: SparkFun Electronics
+
+repo_url: https://github.com/sparkfun/SparkFun_GNSS_LG580P
+repo_name: sparkfun/SparkFun_GNSS_LG580P
+
+copyright:
+  Copyright 2025 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;</a><br>
+  <a href="https://goo.gl/maps/vkstCpQZW6jZMjzYA" target="_blank" rel="noopener">6333 Dry Creek Parkway, Niwot, Colorado 80503</a>
