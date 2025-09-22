@@ -11064,9 +11064,9 @@
 			(uuid "0b07a5e2-0f88-45c9-9673-c5dca199e650")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/LG580P.step"
+		(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/GNSS/Quectel_LG580P.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.095)
 			)
 			(scale
 				(xyz 1 1 1)
