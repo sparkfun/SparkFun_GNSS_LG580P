@@ -1,18 +1,18 @@
-SparkFun Quadband GNSS RTK Breakout - LG290P (Qwiic)
+SparkFun Quadband GNSS RTK with Heading Breakout - LG580P (Qwiic)
 ========================================
 
-[![SparkFun Quadband GNSS RTK Breakout - LG290P (Qwiic)](https://cdn.sparkfun.com/r/600-600/assets/parts/2/7/6/3/7/26620-LG290P-Quadband-GNSS-Breakout-Feature.jpg)](https://www.sparkfun.com/products/26620)
+![SparkFun Quadband GNSS RTK with Heading Breakout - LG580P (Qwiic)](./banner-repo.png)
 
-[*SparkFun Quadband GNSS RTK Breakout - LG290P (Qwiic) (GPS-26620)*](https://www.sparkfun.com/products/26620)
+[*SparkFun Quadband GNSS RTK with Heading Breakout - LG580P (Qwiic) (GPS-28019)*](https://www.sparkfun.com/sparkfun-quadband-gnss-rtk-with-heading-breakout-lg580p-qwiic.html)
 
 
-The [SparkFun Quadband GNSS RTK Breakout - LG290P (Qwiic)](https://www.sparkfun.com/products/26620) features the Quectel LG290P GNSS module. The board's dimensions, pin layout, and connectors are exactly the same as our vary popular [SparkFun GPS-RTK-SMA Breakout - ZED-F9P (Qwiic)](https://www.sparkfun.com/products/16481); and can be used as a drop-in replacement. The board also accommodates users with a diverse choice of interfaces including UART, SPI*, and I2C*.
+The [SparkFun Quadband GNSS RTK with Heading Breakout - LG580P (Qwiic)](https://www.sparkfun.com/sparkfun-quadband-gnss-rtk-with-heading-breakout-lg580p-qwiic.html) features the Quectel LG580P GNSS module, providing exceptional positioning and heading accuracy. The LG580P GNSS module is an upgraded version of the LG290P on our [SparkFun Quadband GNSS RTK Breakout - LG290P (Qwiic)](https://www.sparkfun.com/sparkfun-quadband-gnss-rtk-breakout-lg290p-qwiic.html); providing an additional GNSS antenna input for instantaneous heading determination down to 0.1&deg;. In traditional navigation systems, such as those used on your phone or car, previous navigation points are utilized to determine the course heading. This is the reason why the arrow indicator will spin or be oriented in the wrong directions when the navigation system first boots or has been stationary for extended periods of time. However, with the LG580 GNSS module, users are provided with a dedicated heading without relying on previous course data points, magnetometers/compasses, or gyroscopes in IMUs, which can introduce small errors.
 
-The LG290P module is a quad-band, multi-constellation, high-precision, RTK GNSS receiver. The module is capable of simultaneously receiving signals from the `L1`, `L2`, `L5`, and `L6`/`E6` frequency bands of the GPS, GLONASS, Galileo, BDS, QZSS, and NavIC GNSS constellations. In addition, the module supports SBAS augmentation systems (WASS, EGNOS, BDSBAS, MSAS, GAGAN, and SDCM), PPP services* (BDS PPP-B2b, QZSS CLAS, MADOCA-PPP, and Galileo HAS), and RTK corrections for precision navigation with a fast convergence time and reliable performance.
+The board's dimensions, pin layout, and connectors are similar to our very popular [SparkFun GPS-RTK-SMA Breakout - ZED-F9P (Qwiic)](https://www.sparkfun.com/sparkfun-gps-rtk-sma-breakout-zed-f9p-qwiic.html), featuring a compact design and convenient Qwiic connectors. *(\*Depending on your application, this board could potentially function as a drop-in replacement; users should verify the pin compatibility of this board with their current installation.)* The board also accommodates users with a diverse choice of interfaces including UART, SPI*, I<sup>2</sup>C*, and CAN*. The board has three UART ports, which are accessible through the USB-C connector, BlueSMiRF *(6-pin PTH)* header, and 4-pin locking JST connector. Users can also interface with the board through the 25 PTH pins that are broken out around the edge of the board. For the GNSS antenna(s), SMA antenna connectors are provided on the edge of the board; an optional, secondary antenna can be utilized for heading determination. We also provide two 4-pin JST Qwiic connectors for future use, when the I<sup>2</sup>C feature becomes available for the GNSS module.
 
-The built-in NIC anti-jamming unit provides professional-grade interference signal detection and elimination algorithms, which effectively mitigate against multiple narrow-band interference sources and significantly improves the signal reception performance in complex electromagnetic environments. Additionally, the embedded algorithms ensure reliable positioning in complex scenarios such as urban environments and deep tree cover.
+The LG580P module is a quad-band, multi-constellation, high-precision, RTK and heading GNSS receiver. The module is capable of simultaneously receiving signals from the `L1`, `L2`, `L5`, and `L6`/`E6` frequency bands of the GPS, GLONASS, Galileo, BDS, QZSS, and NavIC GNSS constellations. In addition, the module supports SBAS augmentation systems (WAAS, EGNOS, BDSBAS, MSAS, GAGAN, KASS, ASECNA, SouthPAN, and SDCM), PPP services* (BDS PPP-B2b, QZSS CLAS, MADOCA-PPP, and Galileo HAS), RTCM, and RTK corrections for precision navigation with a fast convergence time and reliable performance.
 
-With its performance advantages of high-precision and low power consumption, this board is an ideal choice for high-precision navigation applications, such as intelligent robots, UAVs, precision agriculture, mining, surveying, and autonomous navigation.
+The built-in professional-grade interference signal detection and elimination algorithms, effectively mitigate multiple narrow-band interference sources and significantly improve signal reception performance in complex electromagnetic environments. In addition, the RTK and heading algorithms ensure reliable positioning in challenging scenarios such as urban environments and deep tree cover. With its high-precision, low power consumption and a high positioning and heading update rate of up to 20 Hz, this board is ideal for high-precision navigation applications, such as intelligent robots, precision agriculture, ADAS, and autonomous driving.
 
 > [!NOTE]
 > `*`: Feature is still under development
@@ -22,45 +22,43 @@ With its performance advantages of high-precision and low power consumption, thi
 > - Additionally, the corrections for some of the PPP services may not be implemented yet.
 
 
-
 Documentation
 --------------
 
-* **[Hookup Guide (mkdocs)](http://docs.sparkfun.com/SparkFun_LG290P_Quadband_GNSS_RTK_Breakout/)** - The hookup guide for the SparkFun Quadband GNSS RTK Breakout - LG290P (Qwiic) hosted by GitHub pages.<br>
-  [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/) [![GitHub Pages Deploy](https://github.com/sparkfun/SparkFun_LG290P_Quadband_GNSS_RTK_Breakout/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/sparkfun/SparkFun_LG290P_Quadband_GNSS_RTK_Breakout/actions/workflows/mkdocs.yml)
-* [SparkFun LG290P GNSS Arduino Library](https://github.com/sparkfun/SparkFun_LG290P_GNSS_Arduino_Library) - An Arduino library for the LG290P GNSS module
+- **[Hookup Guide (mkdocs)](http://docs.sparkfun.com/SparkFun_GNSS_LG580P/)** - A hookup guide for the SparkFun Quadband GNSS RTK Breakout - LG580P breakout board hosted by GitHub pages<br>
+  [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/) [![GitHub Pages Deploy](https://github.com/sparkfun/SparkFun_GNSS_LG580P/actions/workflows/build_documentation.yml/badge.svg)](https://github.com/sparkfun/SparkFun_GNSS_LG580P/actions/workflows/build_documentation.yml)
+- [SparkFun LG290P GNSS Arduino Library](https://github.com/sparkfun/SparkFun_LG290P_GNSS_Arduino_Library) - An Arduino library for the LG290P and LGx80P GNSS modules
 
-
-*Need to download or print our hookup guide?*
-
-* [Print *(Print to PDF)* from Single-Page View](http://docs.sparkfun.com/SparkFun_LG290P_Quadband_GNSS_RTK_Breakout/print_view)
 
 Repository Contents
 -------------------
 
-* **[/docs](/docs/)** - Online documentation files
-    * [assets](/docs/assets/) - Assets files
-        * [3d_model](/docs/assets/3d_model/) - Files for the 3D models
-            * [3D CAD Model](/docs/assets/3d_model/cad_model.step) (.step)
-        * [board_files](/docs/assets/board_files/) - Files for the product design
-            * [KiCad Design Files](/docs/assets/board_files/kicad_files.zip) (.zip)
-            * [Schematic](/docs/assets/board_files/schematic.pdf) (.pdf)
-            * [Dimensions](/docs/assets/board_files/dimensions.pdf) (.pdf)
-        * [component_documentation](/docs/assets/component_documentation/) - Datasheets for hardware components
-        * [img/hookup_guide/](/docs/assets/img/hookup_guide/) - Images for hookup guide documentation
-* **[/Hardware](/Hardware/)** - Hardware design files (.brd, .sch)
-  * **[/Production](/Production/)** - Production files
+- **[/docs](/docs/)** - Online documentation files
+  - [/assets](/docs/assets/) - Assets files
+    - [/3d_model](/docs/assets/3d_model/) - 3D models for the board
+    - [/board_files](/docs/assets/board_files/) - Design files for the board
+      - [KiCad Design Files](/docs/assets/board_files/kicad_files.zip) (.zip)
+      - [Schematic](/docs/assets/board_files/schematic.pdf) (.pdf)
+      - [Dimensions](/docs/assets/board_files/dimensions.pdf) (.pdf)
+    - [/component_documentation](/docs/assets/component_documentation/) - Datasheets for hardware components
+    - [/img/hookup_guide](/docs/assets/img/hookup_guide/) - Images for hookup guide documentation - Hookup guide images for the board
+    - /Hardware - Hardware design files (.brd, .sch)
+      - /Production - Production files
+
 
 Product Variants
 ----------------
 
-* [GPS-26620](https://www.sparkfun.com/products/26620) - v1.0, Initial Release
-* [GPS-26916](https://www.sparkfun.com/products/26916) - SparkFun RTK Postcard *(w/ ESP32)*
+- [GPS-28019](https://www.sparkfun.com/sparkfun-quadband-gnss-rtk-with-heading-breakout-lg580p-qwiic.html) - v1.0, Initial Release
+- LG290P Variants
+  - [GPS-26620](https://www.sparkfun.com/sparkfun-quadband-gnss-rtk-breakout-lg290p-qwiic.html) - SparkFun LG290P Breakout
+  - [GPS-26916](https://www.sparkfun.com/sparkfun-rtk-postcard.html) - SparkFun RTK Postcard *(LG290P + ESP32)*
+
 
 Version History
 ---------------
 
-* [v10](https://github.com/sparkfun/SparkFun_LG290P_Quadband_GNSS_RTK_Breakout/releases/tag/v10) - Initial Release
+- [v10](https://github.com/sparkfun/SparkFun_GNSS_LG580P/releases/tag/v10) - Initial Release
 
 
 License Information
