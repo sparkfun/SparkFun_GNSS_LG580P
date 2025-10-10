@@ -783,19 +783,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#gnss-heading" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          GNSS Heading<a class="headerlink" data-preview="" href="#gnss-heading" title="Permanent link"></a>
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1793,28 +1780,6 @@
 </ul>
 </div>
 </details>
-<h3 id="gnss-heading">GNSS Heading<a class="headerlink" data-preview="" href="#gnss-heading" title="Permanent link"></a></h3>
-<p>In most traditional GNSS navigation systems, such as those used on your phone or car, previous navigation points were utilized to determine the course over ground. This is the reason why the pointer will often be oriented in the wrong direction when the navigation system first boots up or spins after the system has been stationary for an extended period of time.</p>
-<p>However, with the LG580 GNSS module, users can get an immediate heading reading without relying on previous course data points, which is great for autonomous driving and precision agriculture navigation because .</p>
-<p><strong>Velocity Heading</strong>
-Velocity heading works by deriving heading from the direction of velocity and acceleration by successive GNSS measurements. It works well with wheeled or rail-mounted vehicles that do not move sideways under most conditions, and for whom heading is primarily used for navigating on the move without long periods of GNSS interference. Velocity heading requires a GNSS position fix and a horizontal vehicle velocity of at least 1.15 m/s. The heading accuracy is hence dependent on the quality of the GNSS signals and the speed at which the vehicle is moving.</p>
-<p>Velocity heading does not work well with helicopters, boats, or other vehicles that move sideways (sideslip), because the algorithm will then estimate vehicle course over the ground rather than the vehicle heading. It is also ineffective for stationary applications, such as targeting or tracking the heading of slowly moving objects.</p>
-<p>Velocity heading is very effective for cars, rail and wheeled vehicles that move over 1.15 m/s for a reasonable proportion of their operation. It is generally better to use a different heading source for helicopters, boats, planes or drones.</p>
-<p><strong>Magnetic Heading</strong>
-Magnetic heading uses three magnetometers to measure the strength of the Earth’s magnetic field, providing an absolute 3D orientation.</p>
-<p>Magnetometers are susceptible to interference from nearby ferrous objects, magnets, and devices that generate electromagnetic fields.</p>
-<p>Magnetic heading is able to provide heading under most operating conditions but at considerably lower accuracy when compared to dual-antenna heading. This makes it a preferred method for cost-constrained systems or where GNSS reception is poor.</p>
-<p><strong>Gyrocompass Heading</strong>
-Gyroscopes are very accurate, but their accuracy is dependent on latitude; the closer to the equator, the higher the heading accuracy, as the relative movement is greater at the equator. Another method for determining headings is to measure the rotation of the Earth in space, a process often known as north-seeking or gyro heading. Using sophisticated 3-dimensional mathematics, the direction of the true north can be determined by taking gyroscope measurements over a period of time. The earth rotates at the rate of 360 degrees every 24 hours (0.25 degrees per minute), and therefore an extremely sensitive gyroscope is required to reliably distinguish this.</p>
-<p>Gyrocompasses / Fiber Optic Gyroscopes are sensitive to movement, shock, and vibration and can require some procedure and time to initialize which makes them unsuitable for some vehicles and applications. They can, however, determine heading without any external reference which proves gyrocompass heading a strong choice for GNSS denied environments with generally low levels of shock and vibration.</p>
-<div class="admonition info">
-<p class="admonition-title">Heading</p>
-<p>The heading accuracy is derived from baseline length of 1m between the antennas.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This heading angle is derived using dual antenna orientation, and it is different from the heading angle output in <strong>RMC</strong> messages.</p>
-</div>
 <h2 id="peripherals-and-io-pins">Peripherals and I/O Pins<a class="headerlink" data-preview="" href="#peripherals-and-io-pins" title="Permanent link"></a></h2>
 <p>The LG580P GNSS features several peripheral interfaces and I/O pins. Some of these are broken out as pins on the Quad-band GNSS RTK breakout board; whereas, others are broken out to their specific interface <em>(i.e. USB connector, JST connector, etc.)</em>. Additionally, some of their connections are tied to other components on the board.</p>
 <div class="grid">
