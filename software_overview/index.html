@@ -1219,19 +1219,6 @@
 <p>Select the <code>COM</code> port of the CH342 labeled with <code>A</code>.</p>
 </figcaption>
 </figure>
-<div>
-<div class="admonition info">
-<p class="admonition-title">LG580P - Default Settings</p>
-<p>The UART ports of the LG580P GNSS module will have the following default configuration:</p>
-<ul>
-<li>Baudrate: 460800bps</li>
-<li>Data Bits: 8</li>
-<li>Parity: No</li>
-<li>Stop Bits: 1</li>
-<li>Flow Control: None</li>
-</ul>
-</div>
-</div>
 </div>
 <h3 id="configure-the-lg580p">Configure the LG580P<a class="headerlink" data-preview="" href="#configure-the-lg580p" title="Permanent link"></a></h3>
 <p>By default, the UART ports are configured to transmit and receive <code>NMEA 0183</code> and/or <code>RTCM 3.x</code> messages. These messages are generally used for transmitting PNT data; and providing or receiving RTK corrections, respectively. Quectel also implements a system of proprietary messages (<code>PQTM</code>) for users to configure the LG580P, following the data format of the <code>NMEA</code> protocol.</p>
@@ -1275,7 +1262,7 @@
 </span></code></pre></div>
 <p>Once the message has been sent, keep a close watch of the messages in the console. It may help to click on the <kbd><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5.5 4v2h7A1.5 1.5 0 0 1 14 7.5v6a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-6A1.5 1.5 0 0 1 3.499 6H4V4a4 4 0 0 1 7.371-2.154.75.75 0 0 1-1.264.808A2.5 2.5 0 0 0 5.5 4m-2 3.5v6h9v-6z"/></svg></span></kbd> button to disable auto-scrolling, when trying to locate the message response. Additionally, the response may not appear right away, it could be appended to the end of the next data packet, as shown in the image below.</p>
 <p><figure markdown>
-<a href="./assets/img/hookup_guide/qgnss-pqtm_message.png" title="Click to enlarge"><img alt="PQTM demo" src="./assets/img/hookup_guide/qgnss-pqtm_message.png" width="400" /></a>
+<a data-preview="" href="../assets/img/hookup_guide/qgnss-pqtm_message.png" title="Click to enlarge"><img alt="PQTM demo" src="../assets/img/hookup_guide/qgnss-pqtm_message.png" width="400" /></a>
 <figcaption markdown>Example of utilizing the Quectel PQTM messages in the QConsole.</figcaption>
 </figure></p>
 </details>
@@ -1304,20 +1291,13 @@
 <p>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1.46 17.37v-2h-4v-1.99h4v-2l3 3zM13 9V3.5L18.5 9z"/></svg></span> button to select the receiver firmware</p>
 </li>
 <li>Click to choose the firmware upgrade package whose name is identifiable by the presence of <code>*.pkg</code> file extension</li>
-<li>
-<p>Click on the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M24 192h144c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-46.7-46.7c75.3-58.6 184.3-53.3 253.5 15.9 75 75 75 196.5 0 271.5s-196.5 75-271.5 0c-10.2-10.2-19-21.3-26.4-33-9.5-14.9-29.3-19.3-44.2-9.8s-19.3 29.3-9.8 44.2c9.8 15.6 21.5 30.4 35.1 43.9 100 100 262 100 362 0s100-262 0-362C342.8-19.3 193.3-24.7 92.7 58.8L41 7C34.1.2 23.8-1.9 14.8 1.8S0 14.3 0 24v144c0 13.3 10.7 24 24 24"/></svg></span> button to reset module</p>
-<details class="tip">
-<summary>Previous Versions</summary>
-<p>For previous versions of the QGNSS software, prior to initializing the firmware upgrade process, users can send the <code>PQTMSRR</code> <a data-preview="" href="#configure-the-lg580p">PQTM message</a> to perform a system reset and reboot the GNSS receiver. We recommend having everything pre-configured to upgrade the firmware as the module usually initializes within 5s of sending the <code>PQTMSRR</code> message.</p>
-</details>
+<li>Click on the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M24 192h144c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-46.7-46.7c75.3-58.6 184.3-53.3 253.5 15.9 75 75 75 196.5 0 271.5s-196.5 75-271.5 0c-10.2-10.2-19-21.3-26.4-33-9.5-14.9-29.3-19.3-44.2-9.8s-19.3 29.3-9.8 44.2c9.8 15.6 21.5 30.4 35.1 43.9 100 100 262 100 362 0s100-262 0-362C342.8-19.3 193.3-24.7 92.7 58.8L41 7C34.1.2 23.8-1.9 14.8 1.8S0 14.3 0 24v144c0 13.3 10.7 24 24 24"/></svg></span> button to reboot the GNSS module</li>
+<li>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg></span> button to start the firmware upgrade process and wait for it to complete<ol>
+<li>If the GNSS module wasn't rebooted prior initializing the upgrade, the process will wait for the synchronization step. The user will then have 20 seconds to manually reboot the GNSS module; otherwise, the firmware upgrade process will fail.</li>
+<li>Wait for the process to complete</li>
+</ol>
 </li>
-<li>
-<p>Click to start the firmware upgrade process and wait for the process to complete</p>
-</li>
-<li>Click to start the firmware upgrade process and wait for synchronization between the module and the PC</li>
-<li>Manually reset the module within 90 seconds; otherwise, the firmware upgrade will fail. In this case, you can retry the previous step</li>
-<li>Wait for upgrading to complete</li>
-<li>Firmware upgrade is successful. After the upgrade is complete, the module will automatically restart</li>
+<li>After the firmware upgrade is complete, the module will automatically reboot</li>
 </ol>
 </div>
 <h2 id="pygpsclient">PyGPSClient<a class="headerlink" data-preview="" href="#pygpsclient" title="Permanent link"></a></h2>
