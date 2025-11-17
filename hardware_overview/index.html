@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/img/sfe-logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21+insiders-4.53.17">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0+insiders-4.53.17">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.010a373c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.22cc1d52.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1634,9 +1634,9 @@
 <li>Protocol: <code>NMEA 0183</code>/<code>RTCM 3.x</code>/<code>QGC</code></li>
 </ul>
 </li>
-<li>SPI<sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">2</a></sup> (x1)</li>
-<li>I<sup>2</sup>C<sup id="fnref5:1"><a class="footnote-ref" href="#fn:1">2</a></sup> (x1)</li>
-<li>CAN<sup id="fnref6:1"><a class="footnote-ref" href="#fn:1">2</a></sup> (x1)</li>
+<li>SPI<sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup> (x1)</li>
+<li>I<sup>2</sup>C<sup id="fnref5:1"><a class="footnote-ref" href="#fn:1">1</a></sup> (x1)</li>
+<li>CAN<sup id="fnref6:1"><a class="footnote-ref" href="#fn:1">1</a></sup> (x1)</li>
 </ul>
 </li>
 <li>Operating temperature: -40&deg;C to +85&deg;C</li>
@@ -1665,7 +1665,7 @@
 <li>QZSS: <code>L1 C/A</code>, <code>L5</code>, <code>L2C</code>, <code>L6</code></li>
 <li>NavIC: <code>L5</code></li>
 <li>SBAS: <code>L1</code></li>
-<li>L-band PPP<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">1</a></sup>:<ul>
+<li>L-band PPP<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:<ul>
 <li>PPP: <code>B2b</code></li>
 <li>QZSS: <code>L6</code></li>
 <li>Galileo HAS: <code>E6</code></li>
@@ -1795,9 +1795,9 @@
 <p><strong>Interfaces:</strong></p>
 <ul>
 <li>UART (x3)</li>
-<li><del>SPI<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">2</a></sup></del></li>
-<li><del>I<sup>2</sup>C<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">2</a></sup></del></li>
-<li><del>CAN<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">2</a></sup></del></li>
+<li><del>SPI<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></del></li>
+<li><del>I<sup>2</sup>C<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></del></li>
+<li><del>CAN<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup></del></li>
 <li><del>Event Trigger<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></del></li>
 <li>PPS Signal</li>
 <li>RTK Signal</li>
@@ -1856,7 +1856,7 @@
 </ul>
 <details class="note">
 <summary>Additional Support</summary>
-<p>All of the UART ports support firmware updates through their interface. In addition, the <code>UART1</code> port also supports debugging data and the <code>UART3</code> interface can be multiplexed for the CAN bus interface<sup id="fnref7:1"><a class="footnote-ref" href="#fn:1">2</a></sup>.</p>
+<p>All of the UART ports support firmware updates through their interface. In addition, the <code>UART1</code> port also supports debugging data and the <code>UART3</code> interface can be multiplexed for the CAN bus interface<sup id="fnref7:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 </details>
 </div>
 </div>
@@ -2613,15 +2613,14 @@
 </div>
 </div>
 <div class="tabbed-block">
-<p>The <code>RTK</code> <a href="https://en.wikipedia.org/wiki/Through-hole_technology" title="Plated Through Holes" target="_blank" rel="noopener">PTH</a> pin operates as both the <code>RTK_STAT</code> status indicator for the <a href="https://en.wikipedia.org/wiki/Real-time_kinematic_positioning" title="Real-Time Kinematic" target="_blank" rel="noopener">RTK</a> positioning. The pin is also connected to the <code>RTK</code> LED, which can be used as a visual indicator for its operation.</p>
+<p>The <code>RTK</code> <a href="https://en.wikipedia.org/wiki/Through-hole_technology" title="Plated Through Holes" target="_blank" rel="noopener">PTH</a> pin operates as the <code>RTK_STAT</code> status indicator for the <a href="https://en.wikipedia.org/wiki/Real-time_kinematic_positioning" title="Real-Time Kinematic" target="_blank" rel="noopener">RTK</a> positioning. The pin is also connected to the <code>RTK</code> LED, which can be used as a visual indicator for its operation.</p>
 <p><figure markdown>
 <a data-preview="" href="../assets/img/hookup_guide/rtk_signal.png" title="Click to enlarge"><img alt="I/O for RTK signal" src="../assets/img/hookup_guide/rtk_signal.png" width="400" /></a>
 <figcaption markdown>The RTK signal's outputs on the Quad-band GNSS RTK breakout board.</figcaption>
 </figure></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>In this configuration, the pin is set to a high level at startup.
-The <code>RTK_STAT</code> pin is used to indicate <a href="https://en.wikipedia.org/wiki/Real-time_kinematic_positioning" title="Real-Time Kinematic" target="_blank" rel="noopener">RTK</a> status. The pin is at high level during startup.</p>
+<p>The <code>RTK_STAT</code> pin is used to indicate <a href="https://en.wikipedia.org/wiki/Real-time_kinematic_positioning" title="Real-Time Kinematic" target="_blank" rel="noopener">RTK</a> status. The pin is at high level during startup.</p>
 <ol>
 <li>If the pin output is high, it indicates the module has entered the RTK fixed mode.</li>
 <li>If the pin output is low, it indicates that the module exited the RTK fixed mode or is in <a data-preview="" href="#power-modes">Backup mode</a>.</li>
@@ -2861,19 +2860,19 @@ The <code>RTK_STAT</code> pin is used to indicate <a href="https://en.wikipedia.
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:2">
-<div class="admonition warning">
-<p class="admonition-title">Feature Under Development</p>
-<p>Corrections for some of the PPP services have not been implemented.</p>
-</div>
-<p><a class="footnote-backref" data-preview="" href="#fnref:2" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
 <li id="fn:1">
 <div class="admonition warning">
 <p class="admonition-title">Feature Under Development</p>
 <p>Currently, only the UART interface is supported by the module. Support for the <strong>I<sup>2</sup>C</strong>, <strong>SPI</strong>, and <strong>CAN</strong> interfaces are still under development.</p>
 </div>
-<p><a class="footnote-backref" data-preview="" href="#fnref:1" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref2:1" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref3:1" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref4:1" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref5:1" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref6:1" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref7:1" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p><a class="footnote-backref" data-preview="" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref5:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref6:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" data-preview="" href="#fnref7:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<div class="admonition warning">
+<p class="admonition-title">Feature Under Development</p>
+<p>Corrections for some of the PPP services have not been implemented.</p>
+</div>
+<p><a class="footnote-backref" data-preview="" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
 <div class="admonition warning">

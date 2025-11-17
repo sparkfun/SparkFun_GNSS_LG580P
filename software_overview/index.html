@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/img/sfe-logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21+insiders-4.53.17">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0+insiders-4.53.17">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.010a373c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.22cc1d52.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1267,13 +1267,13 @@
 </figure></p>
 </details>
 <h3 id="firmware-update">Firmware Update<a class="headerlink" data-preview="" href="#firmware-update" title="Permanent link"></a></h3>
-<p>In the event that users need to update the firmware on the LG580P module, please refer to the instructions in Quectel's <a data-preview="" href="../assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf">reference manual</a>. For the latest firmware, users should reach out to Quectel through their <a href="https://forums.quectel.com/" target="_blank" rel="noopener">forum page</a>.</p>
+<p>In the event that users need to update the firmware on the LG580P module, please refer to the instructions in Quectel's <a data-preview="" href="../assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf">reference manual</a>. The <a href="https://github.com/sparkfun/SparkFun_GNSS_LG580P/tree/main/Firmware" target="_blank" rel="noopener">GitHub repo Firmware folder</a> contains firmware provided by Quectel. For the very latest firmware, users should reach out to Quectel through their <a href="https://forums.quectel.com/" target="_blank" rel="noopener">forum page</a>.</p>
 <article style="text-align: center;">
 <p><a class="md-button md-button--primary" data-preview="" href="../assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf" target="blank">Firmware Upgrade Manual</a></p>
 </article>
 <div class="admonition warning">
 <p class="admonition-title">Synchronization Step</p>
-<p>In the <a data-preview="" href="../assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf">reference manual</a>, <strong>Step 9</strong> instructs users to wait for a synchronization process. If users refer to an earlier section of the manual, this process requires the LG580P module to receive a <code>SYNC_WORD1</code> within 500ms of powering up. Therefore, users must restart the module during the synchronization step. In the QGNSS software <em>(+v2.1)</em>, this can be performed with the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.65 6.35A7.96 7.96 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"/></svg></span> reboot button.</p>
+<p>In the <a data-preview="" href="../assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf">reference manual</a>, <strong>Step 9</strong> instructs users to wait for a synchronization process. If users refer to an earlier section of the manual, this process requires the LG580P module to receive a <code>SYNC_WORD1</code> within 500ms of powering up. Therefore, users must restart the module during the synchronization step. In the QGNSS software <em>(+v2.1)</em>, a software reset can be performed with the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.65 6.35A7.96 7.96 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"/></svg></span> reboot button. <strong>However, the LG580P seems to need an actual hardware reset. Use a jumper wire to momentarily short the RST pad to GND to reset the LG580P.</strong></p>
 <p><figure markdown>
 <a data-preview="" href="../assets/img/hookup_guide/qgnss-reboot_button.png" title="Click to enlarge"><img alt="Reboot button" src="../assets/img/hookup_guide/qgnss-reboot_button.png" width="400" /></a>
 <figcaption markdown>Reboot button in the QGNSS software <em>(v2.1)</em>.</figcaption>
@@ -1291,9 +1291,10 @@
 <p>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1.46 17.37v-2h-4v-1.99h4v-2l3 3zM13 9V3.5L18.5 9z"/></svg></span> button to select the receiver firmware</p>
 </li>
 <li>Click to choose the firmware upgrade package whose name is identifiable by the presence of <code>*.pkg</code> file extension</li>
-<li>Click on the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M24 192h144c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-46.7-46.7c75.3-58.6 184.3-53.3 253.5 15.9 75 75 75 196.5 0 271.5s-196.5 75-271.5 0c-10.2-10.2-19-21.3-26.4-33-9.5-14.9-29.3-19.3-44.2-9.8s-19.3 29.3-9.8 44.2c9.8 15.6 21.5 30.4 35.1 43.9 100 100 262 100 362 0s100-262 0-362C342.8-19.3 193.3-24.7 92.7 58.8L41 7C34.1.2 23.8-1.9 14.8 1.8S0 14.3 0 24v144c0 13.3 10.7 24 24 24"/></svg></span> button to reboot the GNSS module</li>
-<li>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg></span> button to start the firmware upgrade process and wait for it to complete<ol>
-<li>If the GNSS module wasn't rebooted prior initializing the upgrade, the process will wait for the synchronization step. The user will then have 20 seconds to manually reboot the GNSS module; otherwise, the firmware upgrade process will fail.</li>
+<li>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7z"/></svg></span> button to start the firmware upgrade process</li>
+<li>Reset the GNSS module using a jumper wire: momentarily short the RST (RESET) breakout pad to GND to reset the module<ol>
+<li>The upgrade process waits at the synchronization step. The user has 20 seconds to manually reset the GNSS module; otherwise, the firmware upgrade process will fail</li>
+<li>After momentarily shorting RST to GND, the upgrade process will continue</li>
 <li>Wait for the process to complete</li>
 </ol>
 </li>
@@ -1428,7 +1429,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 9, 2025 15:21:01 UTC"><span class="timeago" datetime="2025-10-09T15:21:01+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 9, 2025 15:21:01 UTC">2025-10-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="November 17, 2025 07:44:55 UTC"><span class="timeago" datetime="2025-11-17T07:44:55+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="November 17, 2025 07:44:55 UTC">2025-11-17</span>
   </span>
 
     
@@ -1455,6 +1456,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/PaulZC" class="md-author" title="@PaulZC" target="_blank" rel="noopener">
+          
+          <img src="../assets/external/avatars.githubusercontent.com/u/5690545.fe356448.jpg" alt="PaulZC">
+        </a>
       
         <a href="https://github.com/santaimpersonator" class="md-author" title="@santaimpersonator" target="_blank" rel="noopener">
           
