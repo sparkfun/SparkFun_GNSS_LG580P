@@ -165,16 +165,6 @@ In the event that users need to update the firmware on the LG580P module, please
 </article>
 
 
-!!! warning "Synchronization Step"
-	In the [reference manual](./assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf), **Step 9** instructs users to wait for a synchronization process. If users refer to an earlier section of the manual, this process requires the LG580P module to receive a `SYNC_WORD1` within 500ms of powering up. Therefore, users must restart the module during the synchronization step. In the QGNSS software *(+v2.1)*, a software reset can be performed with the :material-refresh: reboot button. **However, the LG580P seems to need an actual hardware reset. Use a jumper wire to momentarily short the RST pad to GND to reset the LG580P.**
-
-
-	<figure markdown>
-	[![Reboot button](./assets/img/hookup_guide/qgnss-reboot_button.png){ width="400" }](./assets/img/hookup_guide/qgnss-reboot_button.png "Click to enlarge")
-	<figcaption markdown>Reboot button in the QGNSS software *(v2.1)*.</figcaption>
-	</figure>
-
-
 !!! example "Example - Step-by-Step Instructions"
 	
 
@@ -192,6 +182,15 @@ In the event that users need to update the firmware on the LG580P module, please
 		1. Wait for the process to complete
 	1. After the firmware upgrade is complete, the module will automatically reboot
 
+
+!!! warning "Synchronization Step"
+	In the [reference manual](./assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf), **Step 9** instructs users to wait for a synchronization process. If users refer to an earlier section of the manual, this process requires the LG580P module to receive a `SYNC_WORD1` within 500ms of powering up. Therefore, users must restart the module during the synchronization step. In the QGNSS software *(+v2.1)*, a software reset can be performed with the :material-refresh: reboot button. **However, for the firmware upgrade, the LG580P seems to need an actual hardware reset. Use a jumper wire to momentarily short the RST pad to GND to reset the LG580P.**
+
+
+	<figure markdown>
+	[![Reboot button](./assets/img/hookup_guide/qgnss-reboot_button.png){ width="400" }](./assets/img/hookup_guide/qgnss-reboot_button.png "Click to enlarge")
+	<figcaption markdown>Reboot button in the QGNSS software *(v2.1)*.</figcaption>
+	</figure>
 
 
 ## PyGPSClient
