@@ -155,7 +155,7 @@ In the QGNSS software, users can click on the ++"Advance"++ button, at the botto
 
 
 ### Firmware Update
-In the event that users need to update the firmware on the LG580P module, please refer to the instructions in Quectel's [reference manual](./assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf). For the latest firmware, users should reach out to Quectel through their [forum page](https://forums.quectel.com/).
+In the event that users need to update the firmware on the LG580P module, please refer to the instructions in Quectel's [reference manual](./assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf). The [GitHub repo Firmware folder](https://github.com/sparkfun/SparkFun_GNSS_LG580P/tree/main/Firmware) contains firmware provided by Quectel. For the very latest firmware, users should reach out to Quectel through their [forum page](https://forums.quectel.com/).
 
 
 <article style="text-align: center;" markdown>
@@ -166,7 +166,7 @@ In the event that users need to update the firmware on the LG580P module, please
 
 
 !!! warning "Synchronization Step"
-	In the [reference manual](./assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf), **Step 9** instructs users to wait for a synchronization process. If users refer to an earlier section of the manual, this process requires the LG580P module to receive a `SYNC_WORD1` within 500ms of powering up. Therefore, users must restart the module during the synchronization step. In the QGNSS software *(+v2.1)*, this can be performed with the :material-refresh: reboot button.
+	In the [reference manual](./assets/component_documentation/quectel_lg290p03lgx80p03_firmware_upgrade_guide_v1-1.pdf), **Step 9** instructs users to wait for a synchronization process. If users refer to an earlier section of the manual, this process requires the LG580P module to receive a `SYNC_WORD1` within 500ms of powering up. Therefore, users must restart the module during the synchronization step. In the QGNSS software *(+v2.1)*, a software reset can be performed with the :material-refresh: reboot button. **However, the LG580P seems to need an actual hardware reset. Use a jumper wire to momentarily short the RST pad to GND to reset the LG580P.**
 
 
 	<figure markdown>
@@ -185,9 +185,10 @@ In the event that users need to update the firmware on the LG580P module, please
 
 	1. Click the :material-file-send: button to select the receiver firmware
 	1. Click to choose the firmware upgrade package whose name is identifiable by the presence of `*.pkg` file extension
-	1. Click on the :fontawesome-solid-rotate-backward: button to reboot the GNSS module
-	1. Click the :material-play: button to start the firmware upgrade process and wait for it to complete
-		1. If the GNSS module wasn't rebooted prior initializing the upgrade, the process will wait for the synchronization step. The user will then have 20 seconds to manually reboot the GNSS module; otherwise, the firmware upgrade process will fail.
+	1. Click the :material-play: button to start the firmware upgrade process
+	1. Reset the GNSS module using a jumper wire: momentarily short the RST (RESET) breakout pad to GND to reset the module
+		1. The upgrade process waits at the synchronization step. The user has 20 seconds to manually reset the GNSS module; otherwise, the firmware upgrade process will fail
+		1. After momentarily shorting RST to GND, the upgrade process will continue
 		1. Wait for the process to complete
 	1. After the firmware upgrade is complete, the module will automatically reboot
 
